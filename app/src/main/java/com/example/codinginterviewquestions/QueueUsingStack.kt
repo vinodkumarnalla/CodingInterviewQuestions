@@ -20,6 +20,7 @@ class QueueUsingStack {
 
     }
 
+    /* return the peek value */
     private fun deQueue() : Int{
        if(s1.isEmpty()){
            return -1
@@ -29,6 +30,7 @@ class QueueUsingStack {
         return value
     }
 
+    /* add all the info from s1 to s2 and add the current variable and then add the s2 data*/
     private fun enQueue(i: Int) {
         while (!s1.isEmpty()) {
             s2.push(s1.pop())
